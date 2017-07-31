@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+{% extends "base.html" %}
+
+{% load staticfiles%}
+{% block content %}
+<html>
+<script src="https://use.fontawesome.com/68a1a56600.js"></script>
+	<head>
+	<link rel="manifest" href="https://halla.in/manifest.json">
+	<meta name="theme-color" content="#2196f3">
+    <link rel="icon" sizes="192x192" href="https://halla.in/launcher-icon-8x.png">
+    <meta name="mobile-web-app-capable" content="yes">
+	<meta name="csrf-token" content="dRMUhiySgJQGXQsMjVEKDXKZPtEFA5CAOtWhAq7a"/>
+	<title>Submit your photos &amp; in open contests | SelfieSpree</title>
+	
+	<link rel="icon" type="image/png" href="https://halla.in/front/dist/img/favicon.png" />
+	<!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600,400italic,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'> -->
+	<link rel="stylesheet" href="https://halla.in/front/dist/webapp.min.css" />
+	<link rel="publisher" href="https://plus.google.com/+HallaIn">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>Events</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="/static/css/mains.css" />
+
+
+
+       <style type="text/css">	
+	
+             body {
+             	    padding: 0; margin: 0 auto;
+					 height: auto;
+					 width:fixed;
+					   background-image:url("/static/assets/back3.jpg"); background-repeat:no-repeat; background-size: container_fill;
+                  }
+
+             p{
+
+                 width: 1100px;
+                 border: 5px solid green;
+                 padding: 25px;
+                 margin: 25px;
+
+
+             }
+
+
+
+
+        </style>
+
+
+
+
+	</head>
+
+	<body class="subpage">
+<ul class="contest-list">
+		<li class="active">
+			<a href="#open" data-toggle="tab">LIVE Contests</a>
+		</li>
+		<li>
+			<a href="#close" data-toggle="tab">Upcoming Contests</a>
+		</li>
+	</ul>
+
+		<!-- Three -->
+			<section id="three" class="wrapper">
+				<div class="inner">
+					<header class="align-center">
+						<h2 style="font-weight: bold; color: white;">LIVE Contests!</h2>
+						<h3 style="font-weight: bold; color: white; font-size: 25px;">-Unleash Your Creativity-</h3>
+					</header>
+
+
+
+					<div class="image round left">
+						<img src="/static/assets/greenvibes.jpg" alt="Pic 01" />
+					</div>
+					<h3 style="color:darkgreen;">GREENS VIBES!</h3>
+					
+					<a href="{% url 'addentry' %}" class="button" style="float: left;">ENTER</a>
+					<a href="{% url 'detail' %}" class="button" style="float: left;">ENTRIES</a>
+				
+					<br>
+					<br>
+
+					<p style="font-style: italic; font-size: 20px;">Find something that you love to do, and find a place that you really like to do it in. I found something I loved to do. I'm a mechanical engineer by training, and I loved it. I still do. My son is a nuclear engineer at MIT, a junior, and I get the same vibe from him. Your work has to be compelling. You spend a lot of time doing it.</p>
+					
+
+					<div class="image round right">
+						<img src="/static/assets/pets.jpg" alt="Pic 02" />
+					</div> 
+					<h3 align="right">PERFECT PETS!</h3>
+					<a href="{% url 'addentry' %}" class="button" style="float: right;">ENTER</a>
+					<a href="{% url 'detail' %}" class="button" style="float: right;">ENTRIES</a>
+					<br>
+					<br>
+					<p align="right" style="font-style: italic; font-size: 20px;">Find something that you love to do, and find a place that you really like to do it in. I found something I loved to do. I'm a mechanical engineer by training, and I loved it. I still do. My son is a nuclear engineer at MIT, a junior, and I get the same vibe from him. Your work has to be compelling. You spend a lot of time doing it.</p>
+
+			        
+
+
+				</div>
+			</section>
+		<!-- Footer -->
+		
+	</body>
+</html>
+{% endblock %}

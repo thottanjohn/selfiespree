@@ -1,0 +1,86 @@
+<html>
+<head>
+    <style>
+body {
+    background-color: #AAFF00;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+div.fruits {
+    display: inline-block;
+    width: auto;
+}
+div.fruits p {
+    margin-top: 0;
+    color: #000000;
+    font-size: 50px;
+}
+div.fruits p span.score {
+    font-weight: bold;
+}
+
+ol, li { /* CSS reset: make lists not work like lists */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ol {
+    display: flex;
+}
+li {
+    display: inline-block;
+}
+li.silver {
+    order: -1;
+}
+.silver, .bronze {
+    transform: scale(0.75);
+}
+
+li img {
+    display: block;
+}
+li span.score {
+    position: relative;
+    top: -25px;
+    border: 1px solid black;
+    padding: 12.5px;
+    font-size: 25px;
+}
+li.gold .score {
+    background-color: gold;
+}
+li.silver .score {
+    background-color: silver;
+}
+li.bronze .score {
+    background-color: #CD7F32;
+}
+</style>
+<!DOCTYPE html>
+
+    <meta charset="UTF-8">
+    <title>Top three fruits</title>
+    <link rel='stylesheet' type="text/css" href='https://fonts.googleapis.com/css?family=Lato'>
+</head>
+
+<body>
+    <div class="fruits">
+        <ul>
+        <li> Rank</li>
+        <li>Name</li>
+        <li>Likes</li>
+
+        </ul>
+        <p>Highest Fruit Score: <span class="score">83</span></p>
+        <ol>
+            <li class="gold"><img alt="banana" src="//i.imgur.com/uBDRMVu.png"> <span class="score">83</span></li>
+            <li class="silver"><img alt="apple" src="//i.imgur.com/LGuyqx6.png"> <span class="score">65</span></li>
+            <li class="bronze"><img alt="raspberry" src="//i.imgur.com/eOsWQe5.png"> <span class="score">34</span></li>
+        </ol>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+#ef-header {
+    background-image: url('../assets/pattern/hexellence.png');
+}
+
+nav.top-bar,
+.top-bar-section ul,
+.top-bar-section ul ul li a {
+    background-color: transparent;
+}
+
+.top-bar-section ul ul li a:hover, .btn-primary, .ef-theme-bg, .ef-metro-icn.ef-theme-bg, .top-bar-section ul li.active > a, .top-bar-section ul li.active:hover > a, .ef-social-bar, .ef-fullscreen-mode #progress-bar, #ef-widgets .tagcloud a:hover, .ef-progress-bar div div, .tagcloud a, #ef-loader i, .ui-accordion .ui-accordion-header .ui-accordion-header-icon, .ui-tabs .ui-tabs-nav li.ui-tabs-active, #ef-gallery .flex-direction-nav a:hover, form .btn.send, #sb-progress span {
+    background-color: #ff3f40;
+}
+
+#slide_desc a.btn.ef-hollow-btn, #prevslide:hover, #nextslide:hover, #ef-locations ul .icn-location:before, form label span, #ef-gal-prev:hover, #ef-gal-next:hover, .ef-contact-slider .ui-slider-handle.ui-state-hover, .post-slider-prev:hover, .post-slider-next:hover {
+    color: #ff3f40;
+}
+
+.ef-thumb.flex-active-slide:after, .ui-tabs .ui-tabs-nav li.ui-tabs-active, .ef-contact-slider .ui-slider-handle, .btn-primary, .btn-primary.disabled, .btn-primary[disabled], fieldset[disabled] .btn-primary, .btn-primary.disabled:hover, .btn-primary[disabled]:hover, fieldset[disabled] .btn-primary:hover, .btn-primary.disabled:focus, .btn-primary[disabled]:focus, fieldset[disabled] .btn-primary:focus, .btn-primary.disabled:active, .btn-primary[disabled]:active, fieldset[disabled] .btn-primary:active, .btn-primary.disabled.active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary.active {
+    border-color: #ff3f40;
+}
+
+.ef-tabs.ui-tabs .ui-tabs-panel {
+    border-top-color: #ff3f40;
+}
+
+a, .social-btn-list a:hover {
+    color: #ff3f40;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+    border-color: #ff3f40;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+    background-color: #ff3f40;
+}
+
+.top-bar .toggle-topbar, #ef-tray-button:hover, .page-template-templateshome-template.ef-fullscreen-mode #ef-tray-button:hover, .ef-read-more:after, .tagcloud a:hover, .ef-label, .ef-metro-icn, .ef-preloader, form .btn.send:hover, #sb-custom-prev:hover, #sb-custom-next:hover, #sb-custom-play:hover {
+    background-color: #ff3f40;
+}
+
+@media only screen and (min-width: 801px) {
+    .top-bar-section ul li:hover > a, .top-bar-section ul li.active > a, .top-bar-section ul li.active:hover > a {
+        background-color: #ff3f40;
+    }
+}

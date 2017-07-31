@@ -1,0 +1,412 @@
+/* Zentools2 home-page stacked layout hack start - image overlay on parallax background */
+
+#grid5 #zentools-136 .zt-item-1 .zt-stacked-overlay {
+  background: url("../../../images/web-design/authentic-graphic-design.png") center center no-repeat;
+}
+
+@media (max-width: 740px){
+  #grid5 #zentools-136 .zt-item-1 .zt-stacked-overlay {
+  background: url("../../../images/web-design/authentic-graphic-design-mini.png") center center no-repeat;
+  }
+}
+
+/* Zentools2 home-page hack end */
+
+
+/* FoxContact customizations start - replaced the .button-success class styling. */
+
+.fox-container .fox-form .fox-item .controls .btn-success {
+  background: #ed5353 none;
+}
+
+.fox-container .fox-form .fox-item .controls .btn-success:focus {
+  background: #fc5959 none;
+}
+
+.fox-container .fox-form .fox-item .controls .btn-success:hover {
+  background: #fc5959 none;
+}
+
+/* Resize the FoxContact form correctly on small devices because JB template displays their input elements differently */
+.fox-item.control-group {
+  display:block
+}
+
+.fox-form .alert ul li {
+  border-bottom: 0px;
+}
+
+/* FoxContact customizations end */
+
+
+/* Sliders customizations start */
+
+.nn_sliders.accordion > .accordion-group.blue-custom {
+  border-top: none;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  border-radius: 3px 3px 3px 3px;
+  border-top-color: none;
+}
+
+.nn_sliders.accordion > .accordion-group.blue-custom:hover,
+.nn_sliders.accordion > .accordion-group.blue-custom.active {
+  border-top-color: none;
+}
+
+.nn_sliders.accordion > .accordion-group.active > .accordion-heading > a.accordion-toggle {
+  background-color: #f5f6f9;
+}
+
+.nn_sliders.accordion > .accordion-group {
+    border: 1px solid #f5f6f9;
+}
+
+.nn_sliders.accordion > .accordion-group > .accordion-heading > a.accordion-toggle:hover {
+  background-color: #f5f6f9;
+}
+
+.nn_sliders.accordion > .accordion-group.active > .accordion-heading > a.accordion-toggle {
+  background-color: #f5f6f9;
+}
+
+.nn_sliders.accordion > .accordion-group > div > a:focus,
+.nn_sliders.accordion > .accordion-group.active > div > a:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.nn_sliders.accordion > .accordion-group > div > a:hover,
+.nn_sliders.accordion > .accordion-group.active > div > a:hover {
+  outline: none;
+  -webkit-box-shadow: inset 0 0 1px #8087a3;
+  box-shadow: inset 0 0 1px #8087a3;
+}
+
+.nn_sliders.accordion > .accordion-group > .accordion-body > .accordion-inner {
+    border-top: 1px solid #f5f6f9;
+}
+
+/* Sliders customizations end */
+
+
+/* Simple Image Gallery customizations start */
+
+.sigFreeContainer, ul.sigFreeClassic {
+  padding: 0px !Important; 
+}
+
+ul.sigFreeClassic li.sigFreeThumb {
+  float: none;
+  display: inline-block;
+} 
+
+.sigFreeThumb {
+  border: 5px solid #f5f6f9 !Important;
+  margin: 15px !Important;
+}
+
+/* Simple Image Gallery customizations end */
+
+
+/* Sigplus gallery customizations start - use the !important tag because you need it to overide the same tags they used in the plugin's stylesheets */
+
+/* If the thumbnail size is changed, the 'max-width' needs to be changed below - to readjust the responsive size */
+div.sigplus-gallery ul > li > a > img {
+  border: 5px solid #f5f6f9 !important;
+  margin: 15px !important;
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+}
+
+div.sigplus-gallery ul > li > a:hover {
+  border: px solid #EAECF5 !important;
+  opacity: 0.7 !important;
+  filter: alpha(opacity=70) !important; /* For IE8 and earlier */
+}
+
+@media (max-width: 400px){
+  div.sigplus-gallery ul > li > a > img {
+  margin: 0px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  }
+}
+
+/* Sigplus gallery customizations end */
+
+
+/* My Custom Classes */
+
+.cta-custom-blue {
+  background-color: transparent;
+  color: #8087A3;
+  border: 2px solid #8087A3;
+  width: 175px;
+}
+  
+.cta-custom-blue:hover {
+  background-color: #8087A3;
+  color: #ffffff;  
+}
+
+.cta-custom-peach {
+  background-color: transparent;
+  color: #ED5353;
+  border: 2px solid #ED5353;
+  width: 175px;
+}
+  
+.cta-custom-peach:hover {
+  background-color: #ED5353;
+  color: #ffffff;  
+}
+
+.dark-custom {
+  background: #1e212c !Important;
+  border: none !Important;
+  color: #8087a3 !Important;
+  padding: 30px !Important;
+  min-height: 430px;
+}
+
+.dark-custom div, .dark-custom p, .dark-custom h1, .dark-custom h2, .dark-custom h3, .dark-custom h4, .dark-custom h5, .dark-custom h6 {
+  color: #8087a3 !Important;
+}
+
+.border-top-custom {
+  border-top: 1px solid #e4e7e8 !Important;
+}
+
+
+.padding-top10-custom {
+  padding-top: 10px !Important;
+}
+
+.padding-bottom10-custom {
+  padding-bottom: 10px !Important;
+}
+
+.padding-top20-custom {
+  padding-top: 20px !Important;
+}
+
+.padding-bottom20-custom {
+  padding-bottom: 20px !Important;
+}
+
+.padding-top30-custom {
+  padding-top: 30px !Important;
+}
+
+.padding-bottom30-custom {
+  padding-bottom: 30px !Important;
+}
+
+.padding-top40-custom {
+  padding-top: 40px !Important;
+}
+
+.padding-bottom40-custom {
+  padding-bottom: 40px !Important;
+}
+
+.padding-top50-custom {
+  padding-top: 50px !Important;
+}
+
+.padding-bottom50-custom {
+  padding-bottom: 50px !Important;
+}
+
+.padding-top60-custom {
+  padding-top: 60px !Important;
+}
+
+.padding-bottom60-custom {
+  padding-bottom: 60px !Important;
+}
+
+
+.margin-top10-custom {
+  margin-top: 10px !Important;
+}
+
+.margin-bottom10-custom {
+  margin-bottom: 10px !Important;
+}
+
+.margin-top20-custom {
+  margin-top: 20px !Important;
+}
+
+.margin-bottom20-custom {
+  margin-bottom: 20px !Important;
+}
+
+.margin-top30-custom {
+  margin-top: 30px !Important;
+}
+
+.margin-bottom30-custom {
+  margin-bottom: 30px !Important;
+}
+
+.margin-top40-custom {
+  margin-top: 40px !Important;
+}
+
+.margin-bottom40-custom {
+  margin-bottom: 40px !Important;
+}
+
+.margin-top50-custom {
+  margin-top: 50px !Important;
+}
+
+.margin-bottom50-custom {
+  margin-bottom: 50px !Important;
+}
+
+.margin-top60-custom {
+  margin-top: 60px !Important;
+}
+
+.margin-bottom60-custom {
+  margin-bottom: 60px !Important;
+}
+
+/* My Custom Classes End */
+
+
+h1, h2, h3, h4, h5, h6 {
+  border-bottom: 0px transparent !Important;
+}
+
+h1:after, h2:after, h3:after {
+  height: 0px !Important;
+  background: none !Important;
+  margin-top: 0px !Important;
+}
+
+input:hover, textarea:hover {
+    background: #FAFAFA;
+}
+
+@media (max-width: 540px){
+  #logo img {
+    margin-top: 55px!important;
+  }
+}
+
+#top-overlay {
+  background: transparent !Important;
+}
+
+@media (min-width: 956px){
+  #topwrap .zen-spotlight, #navwrap .zen-spotlight {
+    background: url("../../../images/main-menu-bg.png") repeat !Important;
+  }
+}
+
+#topwrap .zen-spotlight, #navwrap .zen-spotlight {
+  margin-top: 20px !Important;
+}
+
+.meanmenu-reveal {
+  background: #2b3252 !Important;
+  padding: 20px 20px 20px 20px !Important;
+  border: 2px solid #8087a3 !Important;
+}
+
+#navwrap {
+  box-shadow: none !Important;
+}
+
+#menu ul > li a, #menu ul > li .zen-menu-heading {
+  text-transform: capitalize !Important;
+  padding: 10px 18px 0px !Important;
+  letter-spacing: 1px !Important;
+  font-size: 19px !Important;
+}
+
+#menu ul > li a:hover:after, #menu ul > li .zen-menu-heading:hover:after {
+  height: 0px !Important;
+}
+
+.mean-nav a,.mean-nav span.zen-menu-heading {
+  text-transform: capitalize !Important;
+  letter-spacing: 1px !Important;
+  font-size: 19px !Important;
+}
+
+#banner {
+  background-color: #2b3252 !Important;
+}
+
+@media (min-width: 951px){
+  #banner-extra #banner-extra-inner {
+    margin: 225px auto 0;
+  }
+}
+
+@media (max-width: 950px){
+  #banner-extra #banner-extra-inner {
+    margin: 165px auto 0;
+  }
+}
+
+@media (max-width: 490px){
+  #banner-extra #banner-extra-inner {
+    margin: 165px auto 0;
+  }
+  #banner-extra #banner-extra-inner .h1-custom-text {
+    font-size: 27px !important;
+  }
+}
+
+@media (max-width: 490px){
+  .home #banner-extra #banner-extra-inner .zen-row {
+    margin-top: -20px;
+  }
+}
+
+/* //removed these button floats since I'm only using one centered button on the homepage
+@media (min-width: 799px){
+  .home #banner-extra #banner-extra-inner .cta-custom-blue {
+    float: right;
+  }
+}
+
+@media (min-width: 799px){
+  .home #banner-extra #banner-extra-inner .cta-custom-peach {
+    float: left;
+  }
+}
+*/
+
+.home #grid-wrap {
+  margin-top: 0px;
+}
+
+@media screen and (max-width:@grid-collapse) {
+  .mainwrap .sidebar:after {
+    display:none;
+  }
+}
+
+.sidebar {
+  background: url("../../../images/sidebar-bg.png") repeat !Important;
+  padding-top: 40px !Important;
+}
+
+.mainwrap .sidebar .moduletable {
+  padding-bottom: 40px !Important;
+  margin-bottom: 40px !Important;
+}
+
+#bottomwrap {
+  background: url("../../../images/banner-bg-bottom.jpg") top center repeat #f5f6f9 !Important;
+}

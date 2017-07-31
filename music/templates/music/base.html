@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <style>
+         
+            </style>
+        <!-- load staticfiles to your path -->
+    <!--google fonts -->
+{% load staticfiles %}
+<link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet"  text='text/css' href="https://fonts.googleapis.com/css?family=Satisfy">
+<link rel="stylesheet" type="text/css" href="{% static 'music/style1.css'%}">
+</head>
+<body >
+    <nav class="navbar navbar-inverse">    
+        <div class="container-fluid">
+                            <!-- Logo -->
+            <ul class="nav navbar-nav">
+                <li>
+                    <a  href="{% url 'music:index' %}">
+                        <span class="glyphicon glyphicon-home" aria-hidden="true"></span>&nbsp; Home
+                    </a></ul>
+                </li> 
+           <div class="collapse navbar-collapse" id="topNavbar">
+                <ul class="nav navbar-nav">
+                    <li> <a href="{% url 'music:index' %}">
+                            <span class="glyphicon glyphicon-cd" aria-hidden="true"></span>&nbsp; Albums
+                        </a>
+                    </li>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="" > <a href="{% url 'music:album-add' %}">
+                            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>&nbsp;Add Album
+                        </a>
+                    </li>
+                    <li class=""> <a href="{% url 'music:login' %}">
+                            <span class="glyphicon glyphicon-on" aria-hidden="true"></span>&nbsp;Login
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div> 
+    </nav>
+<script src="https://ajax.googleapis.com"/ajax/libs/jquery.min.js></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    {% block body%}
+    {% endblock %}
+</body>
+</html>

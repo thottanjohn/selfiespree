@@ -1,0 +1,64 @@
+/* theme changer */
+.theme-changer-wrap {
+	position: fixed;
+	z-index: 5000;
+	bottom: 50px;
+	right: -202px;
+}
+
+.theme-changer {
+	background-color: #202020;
+	text-transform: uppercase;
+	font-weight: 700;
+	padding: 15px 20px;
+	margin-left: 0;
+}
+
+.theme-changer a.btn {
+	padding-left: 0;
+	padding-right: 0;
+	font-weight: 700;
+	font-size: 11px;
+	width: 76px;
+}
+
+.theme-changer a.btn, .theme-changer a.btn:hover, .theme-changer a.btn:focus {
+	color: #fff;
+}
+
+.theme-changer a#reset-styles.btn {
+	color: #262626;
+}
+
+.changer-inner, .demo-color {
+	width: 160px;
+}
+
+.demo-open-close {
+	position: absolute;
+	left: -45px;
+	bottom: 0;
+	display: block;
+	width: 45px;
+	height: 35px;
+	cursor: pointer;
+	background-image: url('../images/sett.png');
+	background-position: left top;
+	background-repeat: no-repeat;
+}
+
+#col1 {
+	border: 0;
+	padding: 3px 5px;
+}
+
+#stylesw, #col1 {
+	margin-bottom: 15px;
+}
+
+.iris-picker .iris-square, .iris-picker .iris-slider, .iris-picker .iris-square-inner, .iris-picker .iris-palette {
+	-webkit-box-shadow: none;
+			box-shadow: none;
+	-webkit-border-radius: 0;
+			border-radius: 0;
+}

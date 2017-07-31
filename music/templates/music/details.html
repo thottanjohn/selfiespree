@@ -1,0 +1,16 @@
+
+<html>
+{% extends 'music/base.html' %}
+{% block body %}
+<body>
+<div class="col-sm-4 col-lg-2">
+<div class="thumbnail">
+        <!-- Album logo -->
+        <a href="{% url 'music:music_detail' album.id %}">
+            <img src="{{album.album_logo.url}}" class="img-responsive">
+        </a></div>
+<h3>{{album.artist}} - {{album.album_title}}</h3><br>
+<h4>{{album.genre}}</h4>
+{% endblock %}
+</body>
+</html>

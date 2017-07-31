@@ -1,0 +1,14 @@
+   body{
+                background:url('images/b2.jpg')
+            }
+.navbar{
+    border-radius:0;
+}
+.navbar-brand{
+    font-family: "Satisfy",cursive
+}
+.myul{
+ list-style-type: none;
+    margin: 0;
+    padding: 0;
+} 
