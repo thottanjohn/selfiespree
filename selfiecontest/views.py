@@ -30,7 +30,7 @@ def home(request):
     context = {
         'forms': forms
         }
-    return render(request,'home.html',context)
+    return render(request,'index.html',context)
 
 def about(request):
     title = "welcome %s" % request.user

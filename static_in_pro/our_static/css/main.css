@@ -50,7 +50,6 @@
 }
 
 
-
 	blockquote, q {
 		quotes: none;
 	}
@@ -1977,9 +1976,9 @@
 		}
 
 	label {
-		color: #555;
+		color:green;
 		display: block;
-		font-size: 0.9em;
+		font-size: 1.2em;
 		font-weight: 600;
 		margin: 0 0 1em 0;
 	}
@@ -2721,7 +2720,7 @@
 			top: 0;
 			height: 44px;
 			line-height: 44px;
-			position: fixed ;
+			position: fixed;
 		}
 
 	#header {
@@ -3002,7 +3001,7 @@
 
 			#banner .flex div {
 				border-right: 2px solid rgba(255, 255, 255, 0.2);
-				padding: 0 8em;
+				padding: 0 6em;
 			}
 
 				#banner .flex div:last-child {

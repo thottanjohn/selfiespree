@@ -35,36 +35,56 @@
   <body>
 
     <div class="container">
-    <header id="header" style="opacity: .9; height: 50px;">
+    <header id="header" class="fadeIn animated" style="opacity: .9; height: 50px;">
 					 <nav >
 					 <div class="navbar-header">
+			
+                    <a href="{% url 'home' %}" class="logo"><strong>	&nbsp;	&nbsp;	&nbsp;	 		&nbsp;	&nbsp;	&nbsp;	 ONLine</strong>SelfieContest</a>
+
 								<a type="button" class="navPanelToggle" data-toggle="collapse" data-target="#navbar" aria-expanded="False"   aria-controls="navbar">
             				  <span class="fa fa-bars"></span>
            					 </a>
 					 </div>
 						 <div id="navbar" class="navbar-collapse collapse">
 
-						<a href="{% url 'home' %}"><i class="fa fa-home fa-lg" aria-hidden="true"></i>Home</a>
-						
-						<a href="{% url 'events' %}"><i class="fa fa-camera-retro fa-lg"></i>&nbsp;Events</a>
-							<a href="{% url 'about' %}"><i class="fa fa-book fa-lg"></i>&nbsp;AboutUs</a>
+						 
+                        <SPAN TITLE=Home><a href="{% url 'home' %}"><i class="fa fa-home fa-lg" aria-hidden="true"></i></a></SPAN>
+						 &nbsp;
+                        &nbsp;
+                        <SPAN TITLE=Contests><a href="{% url 'events' %}"><i class="fa fa-camera-retro fa-lg"></i>&nbsp;</a> </SPAN>
+						 			 &nbsp;
+                        &nbsp;
+								 {% if user.is_authenticated %}
+						 
+                        <SPAN TITLE=Profile><a href="{% url 'profile' %}"><i class="fa fa-user-circle-o fa-lg"></i>&nbsp;</a></SPAN>
+					 &nbsp;
+                        &nbsp;
+						{% endif %}
+                        <SPAN TITLE=AboutUs><a href="{% url 'about' %}"><i class="fa fa-book fa-lg"></i>&nbsp;</a></SPAN>
+				 			 &nbsp;
+                        &nbsp;
 				 {% if user.is_authenticated %}
-						<a href="{% url 'profile' %}"><i class="fa fa-user-circle-o fa-lg"></i>&nbsp;Profile</a>
-
-						<a href="{% url 'auth_logout' %}"><i class="fa fa-sign-out fa-lg" aria-hidden="true"></i>&nbsp;Logout</a>
+                        <SPAN TITLE=Logout><a href="{% url 'auth_logout' %}"><i class="fa fa-sign-out fa-lg" aria-hidden="true"></i>&nbsp;</a></SPAN>
+						 			 &nbsp;
+                        &nbsp;
 						 </div>
   					</nav>
 
 				{% else %}
-						<a href="{% url 'auth_login' %}"><i class="fa fa-sign-in fa-lg" aria-hidden="true"></i>&nbsp;Login</a>
-						<a href="{% url 'registration_register' %}"><i class="fa fa-user-plus fa-lg" aria-hidden="true"></i>&nbsp;SignUp</a>
+						 
+                        <SPAN TITLE=Login><a href="{% url 'auth_login' %}"><i class="fa fa-sign-in fa-lg" aria-hidden="true"></i>&nbsp;</a></SPAN>
+						 			 &nbsp;
+                        &nbsp;
+                        <SPAN TITLE=SignUp><a href="{% url 'registration_register' %}"><i class="fa fa-user-plus fa-lg" aria-hidden="true"></i>&nbsp;</a></SPAN>
+									 &nbsp;
+                        &nbsp;
 						</div>
 					</nav>
 
 
 				{% endif %}
-
-
+						
+    
 
 
 			</header>
